@@ -22,7 +22,9 @@
   ],
   "dependencies": {
     "cycle": "~1.0.3",
-    "glossy": "0.x.x",
+    "glossy": "0.x.x"
+  },
+  "optionalDependencies": {
     "unix-dgram": "~0.2.1"
   },
   "devDependencies": {
@@ -33,7 +35,7 @@
   "main": "./lib/winston-syslog",
   "scripts": {
     "pretest": "stylezero lib/ test/",
-    "test": "sudo vows test/*-test.js --spec"
+    "test": "./node_modules/.bin/vows test/*-test.js --spec"
   },
   "engines": {
     "node": ">= 0.8.0"
